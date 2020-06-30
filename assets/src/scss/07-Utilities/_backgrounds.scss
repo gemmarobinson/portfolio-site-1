@@ -1,0 +1,51 @@
+.h-bg-cover {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+}
+
+.h-overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $overlay-background-colour;
+    position: absolute;
+
+    &--gradient {
+        background-color: $overlay-background-colour;
+        background: $overlay-gradient-colour;
+    }
+}
+
+.h-box-shadow {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.h-bg-white {
+    background-color: color(white);
+}
+
+.h-bg-medium-gray {
+    background-color: color(medium-gray);
+}
+
+.h-overflow-hidden {
+    overflow: hidden;
+}
+
+.h-bg-slope {
+    background-image: url('../images/backgrounds/bg-slope.svg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md) {
+        background-position: center 115px;
+    }
+
+    &--companies {
+        background-position: center 710px;
+    }
+}

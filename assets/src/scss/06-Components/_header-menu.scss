@@ -1,0 +1,151 @@
+@include media-breakpoint-up(xl) {
+    .c-header-menu {
+        display: block;
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li:not(:last-child) {
+                line-height: 1.19;
+                margin-left: 42px;
+
+                a {
+                    line-height: 1.19;
+                    color: color(white);
+                    position: relative;
+                    display: inline-block;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    &:after {
+                        content: '';
+                        height: 1px;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        right: 0;
+                        width: 0;
+                        background-color: color(green);
+                        transition: 0.3s ease all;
+                        z-index: 2;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &:active,
+                &.current-menu-item,
+                &.current_page_ancestor {
+                    > a {
+                        text-decoration: none;
+
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.menu-item-has-children {
+                    position: relative;
+
+                    .sub-menu {
+                        display: none;
+                    }
+                }
+            }
+
+            li:last-child {
+                margin-left: 42px;
+
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    height: 45px;
+                    line-height: 45px;
+                    min-width: 153px;
+                    background-color: color(green);
+                    color: color(navy);
+                    text-transform: uppercase;
+                    font-weight: $font-weight-bold;
+                    letter-spacing: 2px;
+                    position: relative;
+                    overflow: hidden;
+                    -webkit-transform: perspective(1px) translateZ(0);
+                    transform: perspective(1px) translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    position: relative;
+                    -webkit-transition-property: color;
+                    transition-property: color;
+                    -webkit-transition-duration: 0.5s;
+                    transition-duration: 0.5s;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: color(navy);
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transform-origin: 0 50%;
+                        transform-origin: 0 50%;
+                        -webkit-transition-property: transform;
+                        transition-property: transform;
+                        -webkit-transition-duration: 0.5s;
+                        transition-duration: 0.5s;
+                        -webkit-transition-timing-function: ease-out;
+                        transition-timing-function: ease-out;
+                    }
+
+                    &:hover,
+                    &:active {
+                        text-decoration: none;
+                        color: color(green);
+
+                        &:before {
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                            -webkit-transition-timing-function: cubic-bezier(
+                                0.52,
+                                1.64,
+                                0.37,
+                                0.66
+                            );
+                            transition-timing-function: cubic-bezier(
+                                0.52,
+                                1.64,
+                                0.37,
+                                0.66
+                            );
+                        }
+                    }
+
+                    &:focus {
+                        border: 1px dashed color(navy);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.c-header-menu {
+    a {
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            border: none;
+        }
+    }
+}

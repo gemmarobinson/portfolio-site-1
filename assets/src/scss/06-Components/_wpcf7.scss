@@ -1,0 +1,14 @@
+.wpcf7-form {
+    .wpcf7-response-output {
+        color: color(white);
+        width: 480px;
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin: 20px 0 0 0;
+
+        &.wpcf7-mail-sent-ok {
+            border-color: color(green);
+        }
+    }
+}

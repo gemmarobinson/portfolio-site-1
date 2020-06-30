@@ -1,0 +1,37 @@
+.c-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+        margin: 0 -8px 45px -8px;
+    }
+
+    .c-cards__single {
+        background-color: color(white);
+        width: 100%;
+        padding: 52px 50px 65px 50px;
+        text-align: center;
+        margin: 0 0 15px 0;
+
+        @include media-breakpoint-up(md) {
+            width: calc(50% - 16px);
+            margin: 0 8px 20px 8px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: calc(33% - 16px);
+        }
+    }
+
+    &--raised {
+        .c-cards__single {
+            &:nth-of-type(3n-1) {
+                @include media-breakpoint-up(lg) {
+                    margin-top: -20px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

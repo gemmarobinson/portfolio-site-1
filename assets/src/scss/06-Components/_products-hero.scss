@@ -1,0 +1,94 @@
+.c-products-hero {
+    padding: 130px 0 120px;
+    margin-bottom: -70px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 275px 0 305px 0;
+        margin-bottom: -250px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 275px 0 440px 0;
+        margin-bottom: -385px;
+        min-height: 894px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: color(navy);
+        opacity: 0.7;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            opacity: 0.8;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: color(space);
+        mix-blend-mode: hard-light;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: none;
+        }
+    }
+
+    .c-products-hero__back-link {
+        margin-bottom: 30px;
+        display: block;
+
+        @include media-breakpoint-up(lg) {
+            top: -90px;
+            left: 15px;
+            right: 15px;
+            position: absolute;
+        }
+    }
+
+    .c-products-hero__background-text {
+        opacity: 0.11;
+        color: color(battleship-gray);
+        text-align: left;
+        justify-content: flex-start;
+        top: -90px;
+        left: -45px;
+
+        &--center {
+            left: 0;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &--single {
+        margin-bottom: 0;
+        padding: 130px 0 60px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 240px 0 60px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 275px 0 330px 0;
+            margin-bottom: -285px;
+        }
+
+        .c-products-hero__back-link {
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.h-mt-10-5 {
+    margin-top: 10.5rem;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 5rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        margin-top: 0;
+    }
+}
+
+.h-mt-10 {
+    margin-top: 10rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: 2.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 1.25rem;
+    }
+}
+
+.h-mt-7-2 {
+    margin-top: 7.2rem;
+}
+
+.h-mb-5-2 {
+    margin-bottom: 5.2rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.h-mb-10-5 {
+    margin-bottom: 10.5rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 5.25rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 2.6rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.h-my-7-8 {
+    margin-top: 7.8rem;
+    margin-bottom: 7.8rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.h-pt-9 {
+    padding-top: 9rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 2.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 1.25rem;
+    }
+}
+
+.h-pt-10 {
+    padding-top: 10rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 2.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 1.25rem;
+    }
+}
+
+.h-pt-10-8 {
+    padding-top: 10.8rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 5.4rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 2.7rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 1.35rem;
+    }
+}
+
+.h-pb-7-8 {
+    padding-bottom: 7.8rem;
+}
+
+.h-pb-10-5 {
+    padding-bottom: 10.5rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 0;
+    }
+}
+
+.h-pb-11-8 {
+    padding-bottom: 11.8rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 5.9rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 2.95rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2rem;
+    }
+}

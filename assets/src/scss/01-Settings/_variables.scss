@@ -1,0 +1,80 @@
+/*----------------------------------------
+  # Colours
+----------------------------------------*/
+$colors: (
+    black: #000,
+    white: #fff,
+    green: #25d8b5,
+    turquoise: #5de8ce,
+    blue: #034aff,
+    navy: #1d233d,
+    dark-navy: #060a23,
+    space: #293563,
+    purple-navy: #38446c,
+    gray: #f5f5f5,
+    medium-gray: #ededed,
+    dark-gray: #ababab,
+    gray-web: #7a7a7a,
+    battleship-gray: #8d8d8d,
+);
+
+$background-text-color: rgba(29, 35, 61, 0.03);
+
+/* ------------------------------------
+  # GENERAL
+-------------------------------------- */
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 900;
+
+// Required if using the background helpers
+$overlay-background-colour: rgba(29, 35, 61, 0.7);
+$overlay-gradient-colour: '{{ Linear RGBA Gradient }}';
+
+/*----------------------------------------
+  # Typography
+----------------------------------------*/
+
+$font-numbers: 'Bebas Neue', cursive;
+
+$headings-font-family: 'Raleway', sans-serif;
+
+// H1
+$h1-font-size: 50px;
+$h1-line-height: 1.06;
+$h1-font-weight: 500;
+
+// H2
+$h2-font-size: 28px;
+$h2-line-height: 1.25;
+$h2-font-weight: 400;
+
+// h3
+$h3-font-size: 16px;
+$h3-line-height: 1.33;
+$h3-font-weight: 500;
+
+// h4
+$h4-font-size: 16px;
+$h4-line-height: 1.38;
+$h4-font-weight: 500;
+
+// h5
+$h5-font-size: 16px;
+$h5-line-height: 1.38;
+$h5-font-weight: 500;
+
+// h6
+$h6-font-size: 16px;
+$h6-line-height: 1.38;
+$h6-font-weight: 500;
+
+// Paragraph
+$paragraph-size: 16px;
+$paragraph-line-height: 1.5;
+$paragraph-color: color(navy);
+$paragraph-font-weight: $font-weight-normal;
+$paragraph-font-family: 'Raleway', sans-serif;
+$small-paragraph-size: 13px;

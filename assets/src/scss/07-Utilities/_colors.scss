@@ -1,0 +1,27 @@
+.h-color-white {
+    color: color(white);
+}
+
+.h-color-green {
+    color: color(green);
+}
+
+.h-color-blue {
+    color: color(blue);
+}
+
+.h-hover-blue {
+    &:hover,
+    &:active,
+    &:focus {
+        color: color(blue);
+    }
+}
+
+.h-hover-white {
+    &:hover,
+    &:active,
+    &:focus {
+        color: color(white);
+    }
+}

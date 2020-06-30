@@ -1,0 +1,150 @@
+.c-form {
+    width: 480px;
+    max-width: 100%;
+    margin-top: 80px;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 40px;
+    }
+
+    .c-form__row {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 10px;
+
+        label {
+            margin: 0 9px 0 0;
+
+            @include media-breakpoint-down(md) {
+                margin: 0 8px 0 0;
+            }
+
+            @include media-breakpoint-down(xs) {
+                margin: 0 6px 0 0;
+            }
+        }
+
+        input,
+        textarea {
+            flex-grow: 1;
+        }
+
+        &--block {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 29px 0 20px 0;
+            padding-top: 42px;
+            position: relative;
+
+            &:before {
+                content: url('../images/triangle.svg');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            label {
+                margin-bottom: 15px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+
+    .c-form__submit {
+        display: inline-flex;
+        justify-content: center;
+        height: 45px;
+        line-height: 45px;
+        min-width: 153px;
+        border: none;
+        background-color: color(turquoise);
+        color: color(navy);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        letter-spacing: 2px;
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        position: relative;
+
+        input[type='submit'] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .ajax-loader {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 15px;
+            margin: auto 0;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: color(navy);
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: color(turquoise);
+
+            &:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transition-timing-function: cubic-bezier(
+                    0.52,
+                    1.64,
+                    0.37,
+                    0.66
+                );
+                transition-timing-function: cubic-bezier(
+                    0.52,
+                    1.64,
+                    0.37,
+                    0.66
+                );
+            }
+        }
+
+        &:focus {
+            border: 1px dashed color(navy);
+            text-decoration: none;
+        }
+    }
+}

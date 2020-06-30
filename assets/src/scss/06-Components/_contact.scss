@@ -1,0 +1,42 @@
+.c-contact {
+    background-color: color(navy);
+    background-image: linear-gradient(
+        125deg,
+        rgba(28, 35, 61, 1) 0%,
+        rgba(60, 73, 112, 1) 91%
+    );
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 130px 0 50px 0;
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+        padding: 275px 0 95px 0;
+    }
+
+    .c-contact__map {
+        position: absolute;
+        bottom: -135px;
+        right: -140px;
+        max-width: 90vw;
+    }
+
+    .c-contact__background-text {
+        text-align: left;
+        opacity: 0.05;
+        color: color(battleship-gray);
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media-breakpoint-up(lg) {
+            top: -160px;
+            left: -15px;
+            right: -100px;
+        }
+
+        span:last-of-type {
+            padding-left: 8vw;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.c-four-oh-four {
+    padding: 130px 0 120px;
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+        padding: 275px 0 305px 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 275px 0 440px 0;
+        min-height: 894px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: color(navy);
+        opacity: 0.7;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: color(space);
+        mix-blend-mode: soft-light;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: none;
+        }
+    }
+
+    .c-four-oh-four__background-text {
+        opacity: 0.11;
+        color: color(battleship-gray);
+        text-align: left;
+        justify-content: flex-start;
+        top: -90px;
+        left: -45px;
+    }
+
+    .c-four-oh-four__globe {
+        position: absolute;
+        right: -133px;
+        bottom: -263px;
+        max-width: 50vw;
+    }
+}

@@ -1,0 +1,18 @@
+.h-divider {
+    display: block;
+    width: 47px;
+    height: 1px;
+    background-color: color(green);
+
+    &--white {
+        background-color: color(white);
+    }
+
+    &--small {
+        width: 25px;
+    }
+
+    &--long {
+        width: 91px;
+    }
+}

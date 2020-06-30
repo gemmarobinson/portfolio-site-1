@@ -1,0 +1,22 @@
+.c-figures-block {
+    background-color: color(turquoise);
+    padding: 23px 29px 60px 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    svg {
+        align-self: flex-start;
+        margin-bottom: 18px;
+    }
+
+    .c-figures-block__number {
+        font-size: 100px;
+        font-weight: $font-weight-bold;
+        font-family: $font-numbers;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,27 @@
+.c-about-hero {
+    background-color: color(dark-navy);
+    padding: 130px 0 60px 0;
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+        padding: 200px 0 140px 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-bottom: -225px;
+        padding: 275px 0;
+        min-height: 894px;
+    }
+
+    .c-about-hero__background {
+        background-image: url('../images/backgrounds/about-hero-arrows.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.c-footer {
+    background-color: color(navy);
+    background: linear-gradient(80deg, #232b4a 50%, #1c243d 50%);
+    padding: 92px 0 70px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
+}

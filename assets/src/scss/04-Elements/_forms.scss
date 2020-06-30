@@ -1,0 +1,61 @@
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea,
+select {
+    border-radius: 0;
+    -webkit-appearance: none; // For iOS, but this *may* cause disappearance on Desktop.
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px color(gray-web);
+    color: color(green);
+    font-size: 28px;
+    line-height: 1.1;
+    width: 150px;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: color(green);
+    }
+}
+
+textarea {
+    height: 288px;
+    background-color: color(white);
+    resize: none;
+    font-size: 16px;
+    color: color(navy);
+    padding: 20px 15px;
+    border: 1px solid color(white);
+}
+
+label {
+    color: color(white);
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: 2px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+    }
+}
+
+input[type='submit'] {
+}

@@ -1,0 +1,11 @@
+.h-map-rotate {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom-right;
+    animation-name: map-rotate;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        animation-name: none;
+    }
+}

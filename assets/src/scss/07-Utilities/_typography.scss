@@ -1,0 +1,147 @@
+.h-list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.h-section-marker {
+    color: color(green);
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    font-weight: $font-weight-extra-bold;
+    text-transform: uppercase;
+    margin-left: -30px;
+}
+
+.h-strong-text {
+    text-transform: uppercase;
+    font-weight: $font-weight-medium;
+    letter-spacing: 2px;
+    line-height: 1.63;
+}
+
+.h-icon-title {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 11px;
+    overflow: hidden;
+
+    .h-icon-title__icon {
+        width: 65px;
+    }
+
+    .h-icon-title__line {
+        display: block;
+        height: 1px;
+        width: 119px;
+        background-color: color(green);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &--inline {
+        @include media-breakpoint-up(lg) {
+            margin-left: 107px;
+        }
+    }
+
+    &--column {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .h-icon-title__icon {
+            width: auto;
+        }
+
+        .h-icon-title__line {
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &--center {
+        justify-content: center;
+
+        .h-icon-title__icon {
+            width: auto;
+            margin-left: -22px;
+            margin-right: 22px;
+        }
+
+        .h-icon-title__line {
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.h-hover-nounderline {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.h-spaced-text {
+    letter-spacing: 2px;
+}
+
+.h-weight-medium {
+    font-weight: $font-weight-medium;
+}
+
+.h-weight-bold {
+    font-weight: $font-weight-bold;
+}
+
+.h-inline-text {
+    @include media-breakpoint-up(lg) {
+        margin-left: 174px;
+    }
+}
+
+.h-small-h1 {
+    font-size: 28px;
+    letter-spacing: 2.8px;
+}
+
+.h-large-text {
+    font-size: 18px;
+}
+
+.h-background-text {
+    display: none;
+    visibility: hidden;
+
+    @include media-breakpoint-up(md) {
+        color: $background-text-color;
+        font-size: 10vw;
+        font-size: 10.4vw;
+        font-weight: $font-weight-extra-bold;
+        font-style: italic;
+        line-height: 0.88;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        min-height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+        pointer-events: none;
+    }
+
+    &--green {
+        color: color(green);
+        opacity: 0.6;
+    }
+}

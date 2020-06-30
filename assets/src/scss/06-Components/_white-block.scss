@@ -1,0 +1,37 @@
+.c-white-block {
+    padding: 45px;
+    background-color: color(white);
+    box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.03);
+    z-index: 2;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        padding: 45px 119px 75px 119px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 45px 75px 75px 75px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 45px 119px 75px 119px;
+    }
+
+    .c-white-block__title {
+        margin-bottom: 40px;
+        margin-left: -25px;
+
+        @include media-breakpoint-up(md) {
+            margin-left: -65px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .c-white-block__content {
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 360px;
+        }
+    }
+}

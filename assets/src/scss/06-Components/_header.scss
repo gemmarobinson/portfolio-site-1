@@ -1,0 +1,55 @@
+.c-header {
+    padding: 17px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    transition: 0.3s ease all;
+
+    @include media-breakpoint-down(xs) {
+        padding: 10px 0;
+    }
+
+    &.c-header--navy {
+        background: color(navy);
+    }
+
+    svg {
+        @include media-breakpoint-down(xs) {
+            width: 60px;
+        }
+    }
+
+    .c-header__toggle {
+        display: block;
+        cursor: pointer;
+        background: none;
+        margin-left: auto;
+        border: none;
+        color: color(white);
+        font-size: 0;
+        margin-right: 5px;
+        margin-top: -2px;
+
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+body.logged-in {
+    .c-header {
+        top: 32px;
+    }
+}
+
+body.fixed {
+    .c-header {
+        z-index: 1;
+    }
+}

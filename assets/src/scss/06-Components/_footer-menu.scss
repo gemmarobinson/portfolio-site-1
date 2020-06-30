@@ -1,0 +1,60 @@
+.c-footer-menu {
+    ul.menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media-breakpoint-up(sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include media-breakpoint-up(md) {
+            justify-content: space-between;
+        }
+
+        li.menu-item {
+            @include media-breakpoint-down(xs) {
+                margin: 0 0 25px 0;
+            }
+
+            @include media-breakpoint-up(sm) {
+                margin: 0 20px 15px 0;
+            }
+
+            a {
+                line-height: 1.19;
+                color: color(white);
+                position: relative;
+                display: inline-block;
+                letter-spacing: 2px;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                &:after {
+                    content: '';
+                    height: 1px;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    width: 0;
+                    background-color: color(green);
+                    transition: 0.3s ease all;
+                    z-index: 2;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: color(green);
+                    text-decoration: none;
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

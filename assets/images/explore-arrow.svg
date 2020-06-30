@@ -1,0 +1,21 @@
+<svg width="35" height="92" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#25D8B5" fill="none" fill-rule="evenodd">
+        <path d="M22.416 71.525l-4.624 5.681-4.623-5.681M17.792 77.253V0"/>
+        <path class="circle" d="M34.084 74.365c0-8.998-7.295-16.292-16.293-16.292-8.997 0-16.291 7.294-16.291 16.292 0 8.998 7.294 16.292 16.291 16.292 8.998 0 16.293-7.294 16.293-16.292z"/>
+    </g>
+</svg>
+
+<style>
+    svg .circle {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .066em;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset ease-out .5s;
+    }
+
+    svg:hover .circle {
+        stroke-dashoffset: 200;
+    }
+</style>

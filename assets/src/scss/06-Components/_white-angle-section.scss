@@ -1,0 +1,22 @@
+.c-white-angle-section {
+    padding-top: 110px;
+    background-image: url('../images/backgrounds/white-angle-section.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 55px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: color(white);
+    }
+}

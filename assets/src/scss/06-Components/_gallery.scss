@@ -1,0 +1,76 @@
+.c-gallery {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    .c-gallery__image {
+        cursor: pointer;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 15px 0;
+        position: relative;
+
+        @include media-breakpoint-up(xs) {
+            margin: 0 15px 15px 15px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin: 30px;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.3s ease all;
+
+            i {
+                margin: auto;
+                display: block;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                color: color(white);
+            }
+        }
+
+        img {
+            height: 300px;
+            width: auto;
+            max-width: none;
+        }
+
+        &:hover,
+        &:focus {
+            span {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.lg-backdrop {
+    background-color: rgba(29, 35, 61, 0.8);
+}
+
+.lg-toolbar {
+    background: transparent;
+}
+
+.lg-toolbar .lg-icon {
+    color: color(navy);
+    background-color: color(green);
+    border: none;
+}
